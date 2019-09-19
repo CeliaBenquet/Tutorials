@@ -74,11 +74,7 @@ conda remove --name ada --all
 * Install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) using conda (the ada environment needs to be activated):
     
 ```
-conda install -y nodejs jupyterlab bokeh seaborn nb_conda_kernels
-pip install ipympl
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-jupyter labextension install jupyter-matplotlib
-jupyter nbextension enable --py widgetsnbextension
+conda install jupyterlab bokeh seaborn nb_conda_kernels
 ```
 
 * Install some extensions using the Python package manager:
