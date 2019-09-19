@@ -1,6 +1,6 @@
 # 00 - Intro to Tools
 
-This tutorial should get you up and running with your Python environment, plus give you the basics of Jupyter Notebooks. Please complete part 1 before the exercise session on Friday, September 20. In that exercise session, we will go through the notebook in part 2 together. The OPTIONAL and UNGRADED homework 0 should be completed before the release of the NON-OPTIONAL homework 1 on Thursday, October 3.
+This tutorial should get you up and running with your Python environment, plus give you the basics of Jupyter notebooks. Please complete part 1 before the exercise session on Friday, September 20. In that exercise session, we will go through the notebook in part 2 together. The OPTIONAL and UNGRADED homework 0 should be completed before the release of the NON-OPTIONAL homework 1 on Thursday, October 3.
 
 ## Part 1: Setting up your environment
 
@@ -71,10 +71,10 @@ conda remove --name ada --all
 
 [more info on managing environments](https://conda.io/docs/user-guide/tasks/manage-environments.html)
 
-* Install [Jupyter](https://jupyter.org/) using conda (the ada environment needs to be activated):
+* Install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) using conda (the ada environment needs to be activated):
     
 ```
-conda install jupyter bokeh seaborn nb_conda_kernels
+conda install jupyterlab bokeh seaborn nb_conda_kernels
 ```
 
 * Install some extensions using the Python package manager:
@@ -98,10 +98,10 @@ jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py --sys-prefix widgetsnbextension
 ```
 
-* Run a notebook server (be sure to be at the tutorial's folder (`cd path/to/folder/`)). A browser window should open up for you.
+* Run a Jupyter notebook server (be sure to be at the tutorial's folder (`cd path/to/folder/`)). A browser window should open up for you.
 
 ```
-jupyter notebook
+jupyter lab
 ```
 
 * IF you have more problems with widgets:
@@ -112,21 +112,16 @@ jupyter serverextension enable --sys-prefix jupyter_nbextensions_configurator nb
 
 * To shut down the server, close the window on your browser, then do CTRL+C in the terminal.
 
-* IF you later have warnings about missing fonts, in Ubuntu the missing fonts are in `fonts-humor-sans` (to install them: `sudo apt install fonts-humor-sans`). You may also have to clean `matplotlib`'s font cache (~/.cache/matplotlib/) and restart your current jupyter session, for matplotlib to take notice of the changes.
+* IF you later have warnings about missing fonts, in Ubuntu the missing fonts are in `fonts-humor-sans` (to install them: `sudo apt install fonts-humor-sans`). You may also have to clean `matplotlib`'s font cache (~/.cache/matplotlib/) and restart your current Jupyter session, for matplotlib to take notice of the changes.
 
 ## Part 2: Overview of Jupyter notebooks
 
-In this tutorial we explore the functionalities of the Jupyter Notebooks. In this repository you can find the notebook we use during the tutorial.
+In [this tutorial](Intro%20to%20Jupyter%20Notebooks.ipynb) we explore the functionalities of the Jupyter notebooks. In this repository you can find the notebook we use during the tutorial.
 
 Credits to [saloot](https://github.com/saloot) and [Michele Catasta](https://github.com/pirroh), on whose material this version is based.
 
 ## Part 3: Homework 0
 
-Agree to work in groups of 4 people. Take the first homework as an opportunity to get to know your team: you can change before the second homework, after it the groups are made (also for the project!). Four persons is mandatory, only motivated exceptions will be accepted. Use Mattermost or other means to find a team if in need!
+Access Homework 0 (OPTIONAL and UNGRADED) [here](https://github.com/epfl-ada-2019/Homework/tree/master/00%20-%20Optional%20Homework). Clone the repo locally and take the opportunity to freshen up your Python skills, or to acquire them.
 
-Access homework 0 (OPTIONAL and UNGRADED) [here](https://github.com/epfl-ada-2019/Homework/tree/master/00%20-%20Optional%20Homework). Clone the repo locally and take the opportunity to freshen up your Python skills, or to acquire them.
-
-For homework 0, *one* member per group has to use the [this link](https://classroom.github.com/g/eOXaZkyS) to register a team for the exercise and invite the other members, which will create your *team repository for the exercise*.
-Also, remember to register BY TUESDAY, October 1 [here](https://docs.google.com/forms/d/e/1FAIpQLSfUhAtCwpIB0h8aDwPf5LrkwDSGGjZ0ly3sU7RTcron-sg_BA/viewform). Every member of the group should register with his/her email and the group repository. 
-
-On Thursday, October 3rd, the next “graded” homework will be released, along with a tutorial on Pandas.
+On Thursday, October 3, the first graded homework ("Homework 1") will be released.
