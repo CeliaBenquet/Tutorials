@@ -13,7 +13,7 @@ bash ./Anaconda3-2019.07-Linux-x86_64.sh -b -p $HOME/Anaconda3
 ```
 
 Check that `conda` is in your path. If `which conda` returns something like `/home/YOURUSERNAME/Anaconda3/bin/conda`, you are good to go. Otherwise execute
-`echo 'export PATH="$HOME/Anaconda3/bin/:$PATH"' >> $HOME/.bashrc`. Next close the terminal and open a new window. Check `which conda` again.
+`echo ‘export PATH="$HOME/Anaconda3/bin/:$PATH"’ >> $HOME/.bashrc`. Next close the terminal and open a new window. Check `which conda` again.
 
 * IF conda is already installed, run `conda update conda`.
 
